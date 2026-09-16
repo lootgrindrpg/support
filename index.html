@@ -5,181 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lootgrind RPG — Support</title>
     <meta name="description" content="Support and contact for Lootgrind RPG." />
+    <link rel="icon" href="icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       :root {
-        --bg: #0d0d14;
-        --panel: #16171d;
-        --line: #2a2c34;
-        --text: #ecebe4;
-        --dim: #a9adb6;
-        --steel: #969eaa;
+        --bg: #0a0b0b;
+        --panel: #191b1a;
+        --line: #2a2c2b;
+        --text: #edeae3;
+        --dim: rgba(237, 234, 227, 0.46);
+        --steel: #828a92;
+        --steel-deep: #474c51;
       }
-      * { box-sizing: border-box; }
+      * {
+        box-sizing: border-box;
+      }
       body {
         margin: 0;
-        padding: 0 20px 72px;
-        background: var(--bg);
+        min-height: 100vh;
+        padding: 72px 20px 56px;
+        background: radial-gradient(900px 500px at 50% -120px, #15181c 0%, var(--bg) 70%);
         color: var(--text);
-        font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-family: Barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
       }
-      .wrap { max-width: 680px; margin: 0 auto; }
-      header { padding: 56px 0 28px; border-bottom: 1px solid var(--line); }
-      h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: 0.02em; }
-      .tag { color: var(--dim); margin: 0; }
-      h2 {
-        font-size: 13px;
-        letter-spacing: 0.14em;
+      .wrap {
+        max-width: 560px;
+        margin: 0 auto;
+      }
+      .badge {
+        width: 108px;
+        height: 108px;
+        border-radius: 50%;
+        margin: 0 auto 22px;
+        display: block;
+        border: 2px solid var(--steel);
+        box-shadow: 0 0 34px rgba(130, 138, 146, 0.28);
+        object-fit: cover;
+      }
+      h1 {
+        margin: 0 0 6px;
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
+      }
+      .tag {
+        margin: 0 0 30px;
+        color: var(--dim);
+        letter-spacing: 0.04em;
+      }
+      .lede {
+        margin: 0 0 34px;
         color: var(--steel);
-        margin: 40px 0 14px;
+        font-weight: 500;
       }
       .card {
         background: var(--panel);
         border: 1px solid var(--line);
-        border-radius: 10px;
-        padding: 18px 20px;
-        margin: 0 0 12px;
+        border-radius: 12px;
+        padding: 26px 24px 24px;
+        text-align: left;
       }
-      .card h3 { margin: 0 0 6px; font-size: 17px; }
-      .card p { margin: 0; color: var(--dim); }
-      a { color: #7fb2ff; }
-      .contact { font-size: 18px; }
-      footer {
-        margin-top: 48px;
-        padding-top: 20px;
-        border-top: 1px solid var(--line);
-        color: var(--steel);
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 19px;
+        letter-spacing: 0.02em;
+      }
+      .card p {
+        margin: 0;
+        color: var(--dim);
+      }
+      .btn {
+        display: block;
+        margin: 22px 0 14px;
+        padding: 15px 18px;
+        border-radius: 8px;
+        background: linear-gradient(180deg, #6f7780 0%, #545b62 100%);
+        border: 1px solid var(--steel);
+        color: #0b0c0c;
+        font-weight: 700;
+        font-size: 17px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        text-decoration: none;
+        word-break: break-all;
+      }
+      .btn:hover {
+        background: linear-gradient(180deg, #7d868f 0%, #5e666d 100%);
+      }
+      .fine {
         font-size: 14px;
+      }
+      .fine + .fine {
+        margin-top: 10px;
+      }
+      a {
+        color: var(--steel);
+      }
+      footer {
+        margin-top: 38px;
+        color: var(--steel-deep);
+        font-size: 13px;
       }
     </style>
   </head>
   <body>
     <div class="wrap">
-      <header>
-        <h1>Lootgrind RPG — Support</h1>
-        <p class="tag">Questions, bug reports and account help.</p>
-      </header>
+      <img class="badge" src="icon.png" alt="Lootgrind RPG" width="108" height="108" />
+      <h1>Lootgrind RPG</h1>
+      <p class="tag">Loot-hunting dungeon crawler</p>
 
-      <h2>Contact</h2>
-      <div class="card">
-        <p class="contact">
-          Email <a href="mailto:lootgrindrpg@gmail.com">lootgrindrpg@gmail.com</a>
-        </p>
-        <p style="margin-top: 8px">
-          We usually reply within a few days. For a bug, it helps a lot if you include your device
-          model, your iOS version, your character's name and level, and what you were doing when it
-          happened.
-        </p>
-        <p style="margin-top: 8px">
-          Purchases are billed by Apple. Billing questions and refunds go through
-          <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, not through us.
-        </p>
-      </div>
-
-      <h2>Common questions</h2>
+      <p class="lede">Something wrong, or something missing? Tell us and we will look into it.</p>
 
       <div class="card">
-        <h3>I deleted the app. Is my character gone?</h3>
+        <h2>Need help?</h2>
         <p>
-          Probably not. On iPhone the game keeps a copy of your save in the device keychain, which
-          survives deleting and re-downloading the app. When you reinstall, it checks that copy on
-          the first launch and restores your character automatically. The copy is kept up to date as
-          you play, and written immediately when you leave the app or finish a purchase.
+          Questions, bug reports, save problems or feedback — email us and we'll
+          back to you, usually within a few days.
         </p>
-        <p style="margin-top: 8px">
-          If you land on character creation instead, close the app fully and open it once more before
-          creating anything — creating a character and playing will write a new save over the backup.
-          The game has no accounts and no sign-in, and we do not keep a copy of your save, so there is
-          nothing we can restore from our end. Your save is included in your iPhone's own backup,
-          though — see below.
-        </p>
-      </div>
 
-      <div class="card">
-        <h3>I got a new iPhone. Does my character come with me?</h3>
-        <p>
-          Yes, if you bring your data across. Your save is included in your iPhone's backup, so
-          transferring directly from your old iPhone during setup, or restoring the new one from an
-          iCloud or computer backup, carries your character over with everything else. Install the
-          game afterwards and it picks the save up.
-        </p>
-        <p style="margin-top: 8px">
-          Setting the new iPhone up as brand new does not bring it: there is no account to sign in to,
-          so the game can only find a save that is already on the device.
-        </p>
-      </div>
+        <a class="btn" href="mailto:lootgrindrpg@gmail.com">lootgrindrpg@gmail.com</a>
 
-      <div class="card">
-        <h3>How do I keep my character safe?</h3>
-        <p>
-          Leave iPhone backups switched on — Settings, your name, iCloud, iCloud Backup — and your
-          save is carried along with everything else on the phone. That is the only backup there is:
-          the game has no servers, so a character that exists nowhere but a phone with backups turned
-          off cannot be recovered if that phone is lost.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>I bought gems and they did not arrive</h3>
-        <p>
-          Close the app fully and reopen it while you have a connection. If the payment went through
-          but the gems were never delivered, the App Store redelivers that purchase on the next
-          launch and the game grants the gems then. This is the fix in almost every case.
-        </p>
-        <p style="margin-top: 8px">
-          Gem packs are consumable purchases, so Restore Purchases cannot bring them back — that
-          button is for Remove Ads. Your gems live in your save on your device, and the game has no
-          accounts or servers, so we cannot add gems to your account remotely.
-        </p>
-        <p style="margin-top: 8px">
-          Purchases are billed by Apple, and billing questions and refunds are handled by Apple
-          rather than by us. To request one, go to
-          <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> and sign in with
-          your Apple Account.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>What does Restore Purchases do?</h3>
-        <p>
-          It restores the one-time Remove Ads purchase after a re-download, or on another device
-          signed in to the same Apple Account. The game also checks for it automatically each time it
-          starts. Gem packs are consumables and cannot be restored this way.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>I bought Remove Ads but still see ads</h3>
-        <p>
-          Remove Ads stops the forced ads. The optional reward ads stay available on purpose, so you
-          can still claim a refill, free gems or a Magic Find boost if you want them. Nothing is
-          shown unless you tap to watch it.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>I ran out of stamina</h3>
-        <p>
-          Stamina refills on its own over time, and the bar at the top shows how long until the next
-          point. You never have to pay to keep playing — waiting always works.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>A reward ad did not give me my reward</h3>
-        <p>
-          The reward only counts if the ad finishes playing. If you closed it early, try again. If a
-          completed ad still pays nothing, email us and tell us which offer it was.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>How do I delete my data?</h3>
-        <p>
-          Deleting the app removes the game from your device, but the keychain copy of your save can
-          survive it. To erase everything, open Settings inside the game and tap Reset Game before
-          deleting the app — that permanently wipes your character, inventory and progress, including
-          the backup copy. It cannot be undone.
+        <p class="fine">
+          Please include your device model, your iOS version, and your character's name and level so
+          we can help faster.
         </p>
       </div>
 
